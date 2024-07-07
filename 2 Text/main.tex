@@ -1,0 +1,86 @@
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+
+\section*{Spaces}
+
+\verb|single space, sevral    spaces| 
+
+------ after latex: 
+
+single space, sevral    spaces \\ \\
+
+
+\verb|single space, sevral \ \ \ spaces| 
+
+------ after latex: 
+
+single space, sevral \ \ \ spaces \\ \\
+
+\section*{Font Size}
+
+% \quad is tabdent
+\begin{verbatim}
+tiny         {\tiny          The quick brown fox jumps over the lazy dog.}
+scriptsize   {\scriptsize    The quick brown fox jumps over the lazy dog.}
+footnotesize {\footnotesize  The quick brown fox jumps over the lazy dog.}
+small        {\small         The quick brown fox jumps over the lazy dog.}
+normalsize   {\normalsize    The quick brown fox jumps over the lazy dog.}
+large        {\large         The quick brown fox jumps over the lazy dog.}
+Large        {\Large         The quick brown fox jumps over the lazy dog.}
+LARGE        {\LARGE         The quick brown fox jumps over the...}       
+huge         {\huge          The quick brown fox jumps over...}           
+Huge         {\Huge          The quick brown fox jumps over...}           
+HUGE         {\HUGE          The quick brown fox jumps over...}           
+\end{verbatim}
+
+\begin{tabular}{l|l}
+    tiny          & {\tiny The quick brown fox jumps over the lazy dog.}         \\  
+    scriptsize    & {\scriptsize The quick brown fox jumps over the lazy dog.}   \\
+    footnotesize  & {\footnotesize The quick brown fox jumps over the lazy dog.} \\
+    small         & {\small The quick brown fox jumps over the lazy dog.}        \\
+    normalsize    & {\normalsize The quick brown fox jumps over the lazy dog.}   \\
+    large         & {\large The quick brown fox jumps over the lazy dog.}        \\
+    Large         & {\Large The quick brown fox jumps over the lazy dog.}        \\
+    LARGE         & {\LARGE The quick brown fox jumps over the...}               \\
+    huge          & {\huge The quick brown fox jumps over...}                    \\
+    Huge          & {\huge The quick brown fox jumps over...}                    \\
+    HUGE          & {\huge The quick brown fox jumps over...}                    \\
+\end{tabular} \\ \\ \\ \\ \\
+
+
+\section*{Text Shape}
+
+\begin{verbatim}
+normally      \textup{Text Shape.}
+italic        \textit{Text Shape.}
+slanted       \textsl{Text Shape.}
+captical      \textsc{Text Shape.}
+medium series \textmd{Text Shape.}
+bold          \textbf{Text Shape.}
+emphasizes    \emph{Text Shape.}
+\end{verbatim}
+
+\begin{tabular}{l|l}
+    normally & \textup{Text Shape.} \\  
+    italic   & \textit{Text Shape.} \\
+    slanted  & \textsl{Text Shape.} \\
+    captical & \textsc{Text Shape.} \\
+    medium series  & \textmd{Text Shape.} \\
+    bold     & \textbf{Text Shape.} \\
+\end{tabular} \\
+
+\ \ emphasizes \quad \ \ \emph{Text Shape.}
+
+\section*{Quotion}
+
+\begin{tabular}{r|l|l}
+    render quation & code & comment\\  
+    \hline
+    `  & \verb|`|  &  backtick \\  
+    `` & \verb|``| & backtick * 2 \\
+    '  & \verb|'|  &  single quote \\
+    '' & \verb|''| & single quote * 2 \\
+    "  & \verb|"|  &  double quote \\
+\end{tabular} \\
+
+\end{document}
