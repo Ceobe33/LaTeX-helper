@@ -29,6 +29,7 @@
 % Needed to configure page layout
 \RequirePackage{geometry}
 % Needed to deal hyperlink
+% include: \phantomsection
 \RequirePackage[hidelinks,unicode]{hyperref}
 \hypersetup{%
   pdftitle={},
@@ -41,6 +42,7 @@
 \RequirePackage{fontawesome}
 \RequirePackage[default,opentype]{sourcesanspro}
 % Needed to use a toolbox of programming tools
+% include: \ifbool
 \RequirePackage{etoolbox}
 
 %-------------------------------------------------------------------------------
