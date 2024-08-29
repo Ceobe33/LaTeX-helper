@@ -40,6 +40,8 @@
 % (https://github.com/posquit0/latex-fontawesome)
 \RequirePackage{fontawesome}
 \RequirePackage[default,opentype]{sourcesanspro}
+% Needed to use a toolbox of programming tools
+\RequirePackage{etoolbox}
 
 %-------------------------------------------------------------------------------
 %                Configuration for colors
@@ -74,6 +76,10 @@
 
 % Use to draw horizontal line with specific thickness
 \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+
+% Boolean value to switch section color highlighting
+\newbool{acvSectionColorHighlight}
+\setbool{acvSectionColorHighlight}{true}
 
 % Awesome section color
 \def\@sectioncolor#1#2#3{%
